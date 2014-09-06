@@ -123,6 +123,18 @@
                     "reference": "1.8/develop"
                 }
             }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "smarty-php/smarty",
+                "type": "zip",
+                "version": "3.1.19",
+                "dist": {
+                    "url": "https://github.com/smarty-php/smarty/archive/v3.1.19.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -138,7 +150,7 @@
         "fuelphp/upload": "2.0.1",
         "monolog/monolog": "1.5.*",
         "michelf/php-markdown": "1.4.0",
-        "smarty/smarty": "3.*"
+        "smarty-php/smarty": "3.*"
     },
     "suggest": {
         "dwoo/dwoo" : "Allow Dwoo templating with the Parser package",
