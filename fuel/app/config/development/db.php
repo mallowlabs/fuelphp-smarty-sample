@@ -5,10 +5,15 @@
 
 return array(
 	'default' => array(
-		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=fuel_dev',
-			'username'   => 'root',
-			'password'   => 'root',
-		),
+		'connection' => array(
+			'dsn' => 'sqlite:' . APPPATH . 'tmp/sample.sqlite3',
+			'persistent' => false,
+			'compress' => false,
+	),
+	'identifier' => '"',
+	'table_prefix' => '',
+	'enable_cache' => true,
+	'profiling' => true,
+	'charset' => '',
 	),
 );
