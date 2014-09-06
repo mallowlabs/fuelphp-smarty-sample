@@ -7,5 +7,6 @@ $ heroku create
 $ git push heroku master
 $ heroku config:set FUEL_ENV=production
 $ heroku addons:add cleardb
-$ heroku run oil refine migrate
+$ heroku run php oil refine migrate
+$ heroku open
 ```
