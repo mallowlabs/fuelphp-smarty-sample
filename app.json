@@ -1,0 +1,18 @@
+{
+  "name": "fuelphp-smarty-sample",
+  "description": "A sample application with FuelPHP",
+  "repository": "https://github.com/mallowlabs/fuelphp-smarty-sample/",
+  "env": {
+    "FUEL_ENV": {
+      "description": "FuelPHP environment variable",
+      "value": "production"
+    }
+  },
+  "addons": [
+    "cleardb"
+  ],
+  "scripts": {
+    "postdeploy": "php oil refine migrate"
+  }
+}
+
