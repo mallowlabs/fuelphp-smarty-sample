@@ -2,11 +2,13 @@
 class Controller_Inquiry extends Controller_Template
 {
 
+    public $template = 'template.tpl';
+
 	public function action_index()
 	{
 		$data['inquiries'] = Model_Inquiry::find('all');
 		$this->template->title = "Inquiries";
-		$this->template->content = View::forge('inquiry/index', $data);
+		$this->template->content = View::forge('inquiry/index.tpl', $data);
 
 	}
 
@@ -21,7 +23,7 @@ class Controller_Inquiry extends Controller_Template
 		}
 
 		$this->template->title = "Inquiry";
-		$this->template->content = View::forge('inquiry/view', $data);
+		$this->template->content = View::forge('inquiry/view.tpl', $data);
 
 	}
 
@@ -58,7 +60,8 @@ class Controller_Inquiry extends Controller_Template
 		}
 
 		$this->template->title = "Inquiries";
-		$this->template->content = View::forge('inquiry/create');
+		$this->template->inquiry = Model_Inquiry::forge();
+		$this->template->content = View::forge('inquiry/create.tpl');
 
 	}
 
@@ -108,7 +111,7 @@ class Controller_Inquiry extends Controller_Template
 		}
 
 		$this->template->title = "Inquiries";
-		$this->template->content = View::forge('inquiry/edit');
+		$this->template->content = View::forge('inquiry/edit.tpl');
 
 	}
 

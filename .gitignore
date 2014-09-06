@@ -31,4 +31,5 @@ desktop.ini
 /fuel/app/cache/*/*
 /fuel/app/config/crypt.php
 /fuel/app/tmp/*.sqlite3
+/fuel/app/tmp/Smarty/
 
